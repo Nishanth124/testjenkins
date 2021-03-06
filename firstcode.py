@@ -1,24 +1,24 @@
-number=5
-if number%2==0:
-    print("even")
-else:
-    print("odd")
-if  number % 2 == 0 and  number % 5 == 0 and  number %3 ==0:
-    print("it's divisible by 2,3 and5")
-elif number%2==0 and number%3==0 :
-       print("it's divisible by 2and3")
-elif number%3==0 and number%5==0:
-    print("it's divisible by 3and5")
-elif number % 2 == 0 and  number % 5 == 0:
-        print("it's divisible by 2and5")
+import java.util.Scanner;
 
+class CheckEvenOdd
+{
+  public static void main(String args[])
+  {
+    int num;
+    System.out.println("Enter an Integer number:");
 
-elif number%2==0:
-    print("it's divisible by 2")
-elif number % 5 == 0:
-      print("it's divisible by 5")
-elif number%3==0:
-      print("it's divisible by 3")
+    //The input provided by user is stored in num
+    Scanner input = new Scanner(System.in);
+    num = input.nextInt();
+
+    /* If number is divisible by 2 then it's an even number
+     * else odd number*/
+    if ( num % 2 == 0 )
+        System.out.println("Entered number is even");
+     else
+        System.out.println("Entered number is odd");
+  }
+}
 
 
 
